@@ -5,7 +5,7 @@
 <tiles-definitions>
 
 	<definition name="layout" template="/WEB-INF/views/layout.jsp">
-		<put-attribute name="body" value=""></put-attribute>	
+	
 	</definition>
 
 	<definition name="home" extends="layout">
@@ -14,7 +14,8 @@
 	
 	<definition name="about" template="/WEB-INF/views/about.jsp"></definition>
 	<definition name="category-edit" template="/WEB-INF/views/admin/edit.jsp"></definition>
-	<definition name="category-list" template="/WEB-INF/views/admin/list.jsp"></definition>	
+	<definition name="category-list" template="/WEB-INF/views/admin/list.jsp"></definition>
+		
 	<definition name="category-index" extends="layout">
 		<put-attribute name="ehbiy" value="/WEB-INF/views/admin/index.jsp"></put-attribute>
 	</definition>
