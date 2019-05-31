@@ -1,3 +1,5 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+
 <div class="modal-content">
 	<div class="modal-header">
 		<h5 class="modal-title" id="exampleModalLabel">Ангилал засах</h5>

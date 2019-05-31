@@ -36,45 +36,9 @@
 		</tr>
 	</table>
 	<!-- Button trigger modal -->
-	<button type="button" class="btn btn-primary" data-toggle="modal"
-		data-target="#exampleModal" data-whatever="@mdo">Open modal
-		for @mdo</button>
-	<button type="button" class="btn btn-primary" data-toggle="modal"
-		data-target="#exampleModal" data-whatever="@fat">Open modal
-		for @fat</button>
-	<button type="button" class="btn btn-primary" data-toggle="modal"
-		data-target="#exampleModal" data-whatever="@getbootstrap">Open
-		modal for @getbootstrap</button>
+	
 
-	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-		aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">New message</h5>
-					<button type="button" class="close" data-dismiss="modal"
-						aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<form>
-						<div class="form-group">
-							<label for="recipient-name" class="col-form-label"
-								placeholder="First name">Ангиллын нэр:</label> <input
-								type="text" class="form-control" id="recipient-name">
-						</div>
-
-					</form>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary"
-						data-dismiss="modal">Хаах</button>
-					<button type="button" class="btn btn-primary">Хадгалах</button>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 	<div id="list"></div>
 	<script>
 		$.ajax({
@@ -86,12 +50,15 @@
 		function showContent() {
 			console.log("content is showing");
 		}
-		function showEditForm(){
+		
+		function showEditForm(id){
 			$('#exampleModal').modal('show');
 			
-			$.ajax({url : "/admin/category/edit"}).done(function(data) {
+			$.ajax({url : "/admin/category/edit?id="+id}).done(function(data) {
 				$('#modalNew').html(data);
+				console.log(id);
 			});
+		}
 	</script>
 
 	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"

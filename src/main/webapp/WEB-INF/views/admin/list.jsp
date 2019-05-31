@@ -15,20 +15,28 @@
       <th scope="row">1</th>
       <td>Улс төр</td>
      
-      <td><button onclick="showEditForm();" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Засах</button></td>
+      <td><button onclick="showEditForm(23);" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Засах</button></td>
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>Эдийн засаг</td>
       
-      <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Засах</button></td>
+      <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onclick="showEditForm(16)">Засах</button></td>
     </tr>
     <tr>
       <th scope="row">3</th>
       <td>Спорт</td>
       
-      <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Засах</button></td>
+      <td><button type="button" class="btn btn-primary" onclick="showEditForm(17)">Засах</button></td>
     </tr>
   </tbody>
 </table>
 </div>
+/*
+
+
+ELectron.js JAVAScript
+React Native - Mobile app IOS android doesnt matter
+
+React - app ???
+*/
