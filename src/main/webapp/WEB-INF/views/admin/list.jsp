@@ -15,7 +15,7 @@
       <th scope="row">1</th>
       <td>Улс төр</td>
      
-      <td><button onclick="showContent();" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Засах</button></td>
+      <td><button onclick="showEditForm();" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Засах</button></td>
     </tr>
     <tr>
       <th scope="row">2</th>
