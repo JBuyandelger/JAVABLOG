@@ -1,4 +1,6 @@
-package com.example.demo.controller.Demi;
+package com.example.demo.Demi;
+
+
 
 public class KategorForm {
 
