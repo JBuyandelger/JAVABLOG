@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -9,14 +10,16 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class HomeController {
-	
+	@Autowired
+	private CategoryRepository repo;
 	@RequestMapping("/admin/category")
 	public String index() {
 		return "category-index";
 	}
 	
 	@RequestMapping("/admin/category/list")
-	public String list () {
+	public String list (Model model ) {
+		model.addAttribute("Jagsaalt")
 		return "category-list";
 	}
 	@RequestMapping("/admin/category/edit")
