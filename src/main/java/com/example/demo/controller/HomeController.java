@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.example.demo.Domain.kategor;
-import com.example.demo.controller.Demi.KategorForm;
+import com.example.demo.Demi.KategorForm;
 import com.example.demo.repository.CategoryRepository;
 
 @Controller
@@ -42,7 +42,7 @@ public class HomeController {
 	@PostMapping("admin/category/save")
 	@ResponseBody
 	public String saveForm() {
-		return "categoryNEW";
+		return "categorySAVE";
 		
 	}
 
