@@ -1,5 +1,6 @@
-package com.example.demo.Domain;
+package com.example.demo.domain;
 
 public class Plog {
+	
 
 }

@@ -1,5 +1,7 @@
 package com.example.demo.repository;
 
-class BlogRepository {
+import org.springframework.data.repository.PagingAndSortingRepository;
+
+public interface BlogRepository extends PagingAndSortingRepository<Blog, Integer>{
 
 }
