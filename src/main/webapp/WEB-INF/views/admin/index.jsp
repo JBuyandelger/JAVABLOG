@@ -7,34 +7,7 @@
 
 <div class="container">
 	<h1 type="button" class="btn btn-primary">Ангилaл</h1>
-	<table>
-		<tr>
-			<h> Нэр
-			</th>
-			<div>
-				<h1 class="btn">asdasd</h1>
-				Засах
-			</div>
-		</tr>
-		<tr>
-			<td class="btn">Улс төр</td>
-			<td>
-				<button type="button" class="btn btn-primary">Засах</button>
-			</td>
-		</tr>
-		<tr>
-			<td>Нийгэм</td>
-			<td>
-				<button type="button" class="btn btn-primary">Засах</button>
-			</td>
-		</tr>
-		<tr>
-			<td>Эдийн засаг</td>
-			<td>
-				<button type="button" class="btn btn-primary">Засах</button>
-			</td>
-		</tr>
-	</table>
+	
 	<!-- Button trigger modal -->
 	
 
@@ -54,7 +27,7 @@
 		function showEditForm(id){
 			$('#exampleModal').modal('show');
 			
-			$.ajax({url : "/admin/category/edit?id="+id}).done(function(data) {
+			$.ajax({url : "/admin/category/edit?ID="+id}).done(function(data) {
 				$('#modalNew').html(data);
 				console.log(id);
 			});

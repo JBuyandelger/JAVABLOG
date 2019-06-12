@@ -41,7 +41,7 @@ public class HomeController {
 	}
 	
 	@RequestMapping("/admin/category/new")
-	public String newForm (KategorForm form) {
+	public String newForm () {
 		
 		return "category-new";
 	}
@@ -51,8 +51,15 @@ public class HomeController {
 		kategor KATEGOR = new kategor();
 		KATEGOR.setName(form.getNer());
 		KATEGOR.setDescription(form.getTailbar());
-		
-		
+		repo.save(KATEGOR);
+	}
+	@RequestMapping("/admin/category/update")
+	@ResponseBody
+	public void UPDATE(KategorForm form) {
+		kategor KATEGOR = repo.findById(form.getId()).get();
+		KATEGOR.setName(form.getNer());
+		KATEGOR.setDescription(form.getTailbar());
+		repo.save(KATEGOR);
 	}
 
 }

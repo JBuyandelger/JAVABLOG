@@ -19,6 +19,14 @@
 	</div>
 	<div class="modal-footer">
 		<button type="button" class="btn btn-secondary" data-dismiss="modal">Болих</button>
-		<button type="button" class="btn btn-primary">Хадгалах</button>
+		<button type="button" class="btn btn-primary" onclick = "IlgeehForm()">Хадгалах</button>
 	</div>
 </div>
+<script>	
+	function IlgeehForm() {
+		$.post('/admin/category/update', $('#toJSP').serialize()).done(function(){
+			$('#exampleModal').modal('hide');
+			loadList();			
+		})
+	}
+</script>
