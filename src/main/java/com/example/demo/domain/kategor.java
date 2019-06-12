@@ -1,44 +1,44 @@
-package com.example.demo.Domain;
+package com.example.demo.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+
+
 @Entity
-public class kategor {
-@Id
-@GeneratedValue(strategy = GenerationType.IDENTITY)
-private Integer id_kat;
-
-private String name_kat;
-private String desc_kat;
-private Integer ordering_kat;
-public Integer getId_kat() {
-	return id_kat;
-}
-public void setId_kat(Integer id_kat) {
-	this.id_kat = id_kat;
-}
-public String getName_kat() {
-	return name_kat;
-}
-public void setName_kat(String name_kat) {
-	this.name_kat = name_kat;
-}
-public String getDesc_kat() {
-	return desc_kat;
-}
-public void setDesc_kat(String desc_kat) {
-	this.desc_kat = desc_kat;
-}
-public Integer getOrdering_kat() {
-	return ordering_kat;
-}
-public void setOrdering_kat(Integer ordering_kat) {
-	this.ordering_kat = ordering_kat;
-}
-
+public class kategor{
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
+	private String name;
+	private String description;
+	private Integer ordering;
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	public Integer getOrdering() {
+		return ordering;
+	}
+	public void setOrdering(Integer ordering) {
+		this.ordering = ordering;
+	}
 	
-
+	
 }
