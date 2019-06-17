@@ -14,6 +14,7 @@
 	
 	<div id="list"></div>
 	<script>
+	 function loadList(){
 		$.ajax({
 			url : "/admin/category/list"
 		}).done(function(data) {
@@ -23,6 +24,8 @@
 		function showContent() {
 			console.log("content is showing");
 		}
+	 }
+	 loadList();
 		
 		function showEditForm(id){
 			$('#exampleModal').modal('show');

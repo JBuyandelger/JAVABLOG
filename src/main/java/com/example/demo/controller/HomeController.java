@@ -36,6 +36,7 @@ public class HomeController {
 		form.setNer(KATEGOR.getName());
 		form.setTailbar(KATEGOR.getDescription());
 		Modeledit.addAttribute("toJSP", form);
+	
 		return "category-edit";
 		
 	}

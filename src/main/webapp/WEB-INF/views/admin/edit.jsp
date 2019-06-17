@@ -1,4 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="formMYOWN"%>
 
 <div class="modal-content">
 	<div class="modal-header">
@@ -9,12 +10,22 @@
 		</button>
 	</div>
 	<div class="modal-body">
-		<form>
+	
+	
+		<formMYOWN:form modelAttribute="toJSP">
+			
+			<formMYOWN:hidden path="id" />
+		
 			<div class="form-group">
-				<label for="exampleInputEmail1">Нэр</label> 
-				<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ангиллын нэрээ оруулна уу..."> 
+				<label for="ner">Нэр</label>
+				<formMYOWN:input path="ner" class="form-control" />
+			</div>
+
+			<div class="form-group">
+				<label for="tailbar">Тайлбар</label>
+				<formMYOWN:input path="tailbar" class="form-control" />
 			</div>					
-		</form>
+		</formMYOWN:form>
 
 	</div>
 	<div class="modal-footer">

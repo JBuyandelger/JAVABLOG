@@ -59,5 +59,5 @@
 	 	</CCCP:forEach>	
 	</tbody>
 </table>
-/* ELectron.js JAVAScript React Native - Mobile app IOS android doesnt
-matter React - app ??? */
+// ELectron.js JAVAScript React Native - Mobile app IOS android doesnt
+//matter React - app ??? */
