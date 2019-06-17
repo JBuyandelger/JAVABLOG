@@ -6,7 +6,7 @@
 	crossorigin="anonymous">
 
 <div class="container">
-	<h1 type="button" class="btn btn-primary">Ангилaл</h1>
+	<h1 type="button" class="btn btn-primary" onclick = "showSHINEform();">ШИНЭ</h1>
 	
 	<!-- Button trigger modal -->
 	
@@ -25,7 +25,20 @@
 			console.log("content is showing");
 		}
 	 }
+	 
+	 
 	 loadList();
+	 
+	 function showSHINEform(){
+		 
+	$('#exampleModal').modal('show');
+			
+			$.ajax({url : "/admin/category/new"}).done(function(data) {
+				$('#modalNew').html(data);
+				console.log(id);
+			});
+		 
+	 }
 		
 		function showEditForm(id){
 			$('#exampleModal').modal('show');

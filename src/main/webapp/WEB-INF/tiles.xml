@@ -15,9 +15,9 @@
 	<definition name="about" template="/WEB-INF/views/about.jsp"></definition>
 	<definition name="category-edit" template="/WEB-INF/views/admin/edit.jsp"></definition>
 	<definition name="category-list" template="/WEB-INF/views/admin/list.jsp"></definition>
-		
+	<definition name="category-new" template="/WEB-INF/views/admin/new.jsp"></definition>
 	<definition name="category-index" extends="layout">
-		<put-attribute name="ehbiy" value="/WEB-INF/views/admin/index.jsp"></put-attribute>
+	<put-attribute name="ehbiy" value="/WEB-INF/views/admin/index.jsp"></put-attribute>
 	</definition>
   	
 </tiles-definitions>

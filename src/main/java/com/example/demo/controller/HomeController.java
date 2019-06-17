@@ -42,8 +42,8 @@ public class HomeController {
 	}
 	
 	@RequestMapping("/admin/category/new")
-	public String newForm () {
-		
+	public String newForm (Model Modeledit) {
+		Modeledit.addAttribute("toJSP", new KategorForm());
 		return "category-new";
 	}
 	@PostMapping("admin/category/save")
