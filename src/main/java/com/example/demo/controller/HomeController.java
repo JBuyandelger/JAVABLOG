@@ -7,13 +7,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.domain.kategor;
 import com.example.demo.Demi.KategorForm;
 
 import com.example.demo.repository.KategoryRepository;
 
-@Controller
+@RestController
 public class HomeController {
 	@Autowired
 	private KategoryRepository repo;
@@ -23,9 +24,10 @@ public class HomeController {
 	}
 	
 	@RequestMapping("/admin/category/list")
+	
 	public String list (Model model ) {
 		model.addAttribute("Jagsaalt",repo.findAll());
-		return "category-list";
+		return "Jagsaalt";
 	}
 	///////sdffffffffffffffffffffffffff
 	@RequestMapping("/admin/category/edit")
